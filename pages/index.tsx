@@ -17,7 +17,7 @@ export default function Home() {
           <div className="span-bank">
             <span>For support and queries, please contact:</span>
             <a href="mailto:contacts@quantumshift.in">
-              contacts@quantumshift.in
+              contact@quantumshift.in
             </a>
             <a href="mailto:ceo@quantumshift.in">ceo@quantumshift.in</a>
           </div>
