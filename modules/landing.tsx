@@ -18,7 +18,7 @@ export default function Landing({
   };
 
   const backgroundImage =
-    "https://live.staticflickr.com/4710/40645906341_3c01bfb480_b.jpg";
+    "https://live.staticflickr.com/4710/40645906341_d6c6f6d003_k.jpg";
 
   return (
     <main className="main-landing">
