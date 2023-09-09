@@ -1,0 +1,49 @@
+@media only screen and (max-width: 1200px) {
+  .contact-us-head {
+    .contact-us-subheading {
+      font-size: 3rem;
+    }
+  }
+  .contact-us-container {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .contact-us-head {
+    .contact-us-subheading {
+      font-size: 2.75rem;
+    }
+  }
+  .contact-us-container {
+    height: fit-content;
+    flex-direction: column;
+    .contact-us-form {
+      width: 100%;
+      padding-bottom: 7.5vh;
+    }
+    .contact-us-info {
+      width: 100%;
+      .cu-contact-info {
+        padding-bottom: 7.5vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .contact-us-head {
+    .contact-us-subheading {
+      font-size: 2.5rem;
+    }
+  }
+  .contact-us-container {
+    width: 95%;
+    .contact-us-info {
+      .cu-contact-info {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}

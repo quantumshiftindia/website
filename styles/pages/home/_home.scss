@@ -1,0 +1,10 @@
+#home {
+  @import "../../modules/landing-page";
+  display: flex;
+  flex-direction: column;
+  & > section,
+  main {
+    padding: 0 12.5vw;
+  }
+  @import "./home-mobile";
+}

@@ -1,0 +1,104 @@
+.partner-main {
+  width: 100%;
+  background-color: var(--bg-gray);
+  .partner-head {
+    width: 60%;
+    margin: 13vh auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .partner-heading {
+      color: var(--font-blue);
+      letter-spacing: 0.1em;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+    .partner-subheading {
+      padding-top: 2vh;
+      font-size: 3.25rem;
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+  .logo-container {
+    height: 30vh;
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-bottom: 20vh;
+    .logo-carousel {
+      height: 100%;
+      width: 100%;
+      .logo {
+        background-color: var(--bg-gray);
+        display: flex;
+        aspect-ratio: 1;
+        text-decoration: none;
+        color: black;
+        margin-top: auto;
+        margin-bottom: auto;
+        justify-content: center;
+        align-items: center;
+        img {
+          mix-blend-mode: darken;
+          height: 100%;
+          width: fit-content;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .partner-feedback {
+    // display: flex;
+    display: none;
+    .partner-carousel {
+      width: 100%;
+      padding-bottom: 4vh;
+      border-top: 1px solid grey;
+      .partner-feedback-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        .partner-feedback-para {
+          text-align: center;
+          width: 70%;
+          font-size: 1.75rem;
+          line-height: 1.5em;
+          color: grey;
+          padding-top: 10vh;
+        }
+        .feedback-user {
+          display: flex;
+          flex-direction: column;
+          position: relative;
+          align-items: center;
+          width: 120px;
+          margin: 10vh 0;
+          .img-container {
+            height: 100px;
+            aspect-ratio: 1;
+            img {
+              border-radius: 50%;
+            }
+          }
+          .feedback-user-name {
+            font-weight: 800;
+            font-size: 1rem;
+            margin-top: 1vh;
+            width: 200px;
+            text-align: center;
+          }
+          .feedback-user-desc {
+            margin-bottom: 4vh;
+            width: 200px;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  @import "./partners-mobile";
+}

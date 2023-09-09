@@ -1,0 +1,41 @@
+@media only screen and (max-width: 1000px) {
+  .intro-declaration {
+    font-size: 4rem;
+  }
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    .stat-container {
+      &:nth-of-type(odd) {
+        border: none;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .intro-declaration {
+    width: 90%;
+    padding-top: 2vh;
+    font-size: 3rem;
+  }
+  .intro-para {
+    font-size: 1.25rem;
+    width: 90%;
+  }
+  .stats-container {
+    display: flex;
+    flex-direction: column;
+    .stat-container {
+      border: none;
+    }
+  }
+}
+@media only screen and (max-width: 400px) {
+  .intro-declaration {
+    font-size: 2.25rem;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .intro-declaration {
+    font-size: 2rem;
+  }
+}

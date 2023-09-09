@@ -1,0 +1,17 @@
+@media only screen and (max-width: 800px) {
+  .gallery-header {
+    .gallery-description {
+      font-size: 2.5rem;
+      width: 85%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .gallery-container {
+    .gallery {
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+    }
+  }
+}

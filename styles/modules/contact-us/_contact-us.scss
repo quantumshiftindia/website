@@ -1,0 +1,204 @@
+.contact-us-main {
+  position: relative;
+  height: fit-content;
+  &::before {
+    content: "";
+    position: absolute;
+    border: 1px solid var(--font-blue);
+    height: 20vh;
+    top: -10vh;
+    right: 50%;
+    z-index: 5;
+  }
+  .back-5 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 140%;
+    z-index: -1;
+    filter: brightness(50%);
+    img {
+      object-fit: cover;
+    }
+  }
+  padding-bottom: 15vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  .contact-us-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+    .contact-us-heading {
+      font-size: 1.5rem;
+      color: var(--font-blue);
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      margin-top: 15vh;
+      padding: 5px;
+      // background-color: black;
+      border-radius: 3px;
+    }
+    .contact-us-subheading {
+      font-size: 3.5rem;
+      font-weight: 600;
+      text-align: center;
+      margin-top: 1vh;
+      margin-bottom: 5vh;
+    }
+  }
+  .contact-us-container {
+    display: flex;
+    width: 90%;
+    height: 85vh;
+    .cu-form-header {
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      padding: 6vh 0 5vh 0;
+    }
+    .contact-us-form {
+      display: flex;
+      flex-direction: column;
+      width: 65%;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 0 5%;
+      transition: all 0.4s ease-in-out;
+      &.active {
+        background-color: black;
+      }
+      .cu-form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .cu-form-el {
+          border: none;
+          background-color: inherit;
+          transition: all 0.4s ease;
+          height: 7vh;
+          font-size: 1.1rem;
+          font-weight: 300;
+          letter-spacing: 0.1em;
+          outline: none;
+          border-bottom: 1px solid rgb(56, 56, 56);
+          caret-color: var(--font-blue);
+          &:focus {
+            border-bottom: 1px solid var(--font-blue);
+            outline: none;
+            color: white;
+          }
+          &.message {
+            height: 25vh;
+            margin: 3vh 0 5vh 0;
+            resize: none;
+          }
+        }
+        .cu-submit {
+          width: 100%;
+          height: 6vh;
+          color: white;
+          background-color: var(--font-blue);
+          font-size: 1.1rem;
+          letter-spacing: 0.1em;
+          font-weight: 500;
+          border: none;
+          cursor: pointer;
+        }
+      }
+    }
+    .contact-us-info {
+      width: 35%;
+      background-color: black;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      padding: 0 5%;
+      .cu-contact-info-header {
+        padding-top: 6vh;
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 0.1em;
+      }
+      .cu-contact-info {
+        .cu-find-us {
+          display: flex;
+          flex-direction: column;
+          padding-top: 5vh;
+          .cu-fu-header {
+            color: var(--font-blue);
+            font-size: 1.15rem;
+            font-weight: 600;
+          }
+          .cu-fu-para {
+            padding-top: 2vh;
+            line-height: 1.6em;
+            color: var(--font-gray);
+            font-size: 1.05rem;
+            font-weight: 500;
+            width: 80%;
+          }
+        }
+        .cu-email-us {
+          display: flex;
+          flex-direction: column;
+          padding-top: 5vh;
+          .cu-eu-header {
+            color: var(--font-blue);
+            font-size: 1.15rem;
+            font-weight: 600;
+            padding-bottom: 2vh;
+          }
+          .cu-eu-email1,
+          .cu-eu-email2 {
+            font-size: 1.05rem;
+            text-decoration: none;
+            line-height: 1.75em;
+            color: var(--font-gray);
+            font-weight: 500;
+          }
+        }
+        .cu-call-us {
+          display: flex;
+          flex-direction: column;
+          padding-top: 5vh;
+          .cu-cu-header {
+            color: var(--font-blue);
+            font-size: 1.15rem;
+            font-weight: 600;
+            padding-bottom: 2vh;
+          }
+          .cu-cu-phone,
+          .cu-cu-mobile,
+          .cu-cu-fax {
+            font-size: 1.05rem;
+            line-height: 1.75em;
+            color: var(--font-gray);
+            font-weight: 500;
+            text-decoration: none;
+          }
+        }
+        .cu-socials {
+          display: flex;
+          padding-top: 5vh;
+          width: 160px;
+          justify-content: space-between;
+          .cu-social-icon {
+            transition: var(--common-transition);
+            text-decoration: none;
+            color: white;
+            font-size: 1.75rem;
+            &:hover {
+              color: var(--font-blue);
+            }
+          }
+        }
+      }
+    }
+  }
+  @import "./contact-us-mobile";
+}

@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1200px) {
+  .footer-message {
+    width: 45%;
+  }
+  .footer-notify {
+    width: 45%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  & {
+    flex-direction: column;
+    height: fit-content;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    width: 100%;
+  }
+  .footer-message {
+    width: 80%;
+    .ft-message-header {
+      font-size: 2rem;
+    }
+  }
+  .footer-notify {
+    padding-top: 5vh;
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer-message {
+    width: 90%;
+    .ft-message-header {
+      font-size: 1.75rem;
+    }
+  }
+  .footer-notify {
+    width: 90%;
+    .ft-notify-email {
+      flex-direction: column;
+      svg {
+        display: none;
+      }
+      .ft-notify-input {
+        width: 100%;
+        text-align: center;
+      }
+      .ft-notify-button {
+        width: 100%;
+        margin-top: 2vh;
+      }
+    }
+  }
+}

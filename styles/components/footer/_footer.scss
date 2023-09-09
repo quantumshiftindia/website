@@ -1,0 +1,85 @@
+.footer-main {
+  height: 50vh;
+  color: white;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  background-color: var(--bg-black);
+  justify-content: center;
+  align-items: center;
+  .footer-message {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ft-message-header {
+      width: 85%;
+      text-align: start;
+      font-size: 3rem;
+      color: var(--font-blue);
+      padding-bottom: 3vh;
+    }
+    .ft-message-para {
+      font-size: 1.25rem;
+      color: var(--font-gray);
+      width: 85%;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      line-height: 1.75em;
+    }
+  }
+  .footer-notify {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .ft-notify-header {
+      width: 85%;
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      padding-top: 1vh;
+      padding-bottom: 4vh;
+    }
+    .ft-notify-para {
+      color: var(--font-gray);
+      width: 85%;
+      font-size: 1.1rem;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      line-height: 1.75em;
+    }
+    .ft-notify-email {
+      display: flex;
+      width: 85%;
+      padding-top: 5vh;
+      svg {
+        width: 10%;
+        background-color: black;
+        height: 6vh;
+        padding: 1.5%;
+      }
+      .ft-notify-input {
+        width: 60%;
+        background-color: black;
+        outline: none;
+        border: none;
+        padding: 0 1%;
+        color: white;
+        height: 6vh;
+        font-size: 1rem;
+      }
+      .ft-notify-button {
+        width: 30%;
+        background-color: var(--font-blue);
+        color: white;
+        font-weight: 600;
+        letter-spacing: 0.15em;
+        height: 6vh;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+  @import "./footer-mobile";
+}

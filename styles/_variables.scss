@@ -1,8 +1,18 @@
-//global variables
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 :root {
   //if you want css variables
-  --some-variable-here: "some value here";
+  --primary-font: "Jost", sans-serif;
+  --header-height: 10vh;
+  --common-border-black: 2px solid black;
+  --common-border-white: 2px solid white;
+  --font-gray: #717171;
+  --font-white: rgb(255, 255, 255);
+  --font-black: rgb(0, 0, 0);
+  --font-blue: #337bff;
+  --bg-gray: #e6e6e6;
+  --bg-black: #111111;
+  --common-transition: all 0.3s ease;
 }
 
 // if you want scss variables

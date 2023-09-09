@@ -2,4 +2,14 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: monospace;
+  // font-family: var(--primary-font);
+}
+.img-container {
+  position: relative;
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
 }

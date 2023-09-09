@@ -1,0 +1,53 @@
+.des-main {
+  width: 100%;
+  text-align: center;
+  padding-top: 12.5vh;
+  padding-bottom: 10vh;
+  margin: 0 auto;
+  background-color: white;
+  .des-heading {
+    font-size: 1.5rem;
+    color: var(--font-blue);
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+  }
+  .des-declaration {
+    width: 40vw;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+  .dec-points {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: var(--common-border-black);
+    margin-top: 50px;
+    padding-top: 50px;
+    .dec-point {
+      padding: 4vh 2vh;
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      svg {
+        display: flex;
+        width: 20%;
+        font-size: 3rem;
+        // color: var(--font-blue);
+        justify-content: left;
+      }
+      .dec-text {
+        width: 70%;
+        text-align: left;
+        .dec-point-head {
+          font-size: 2rem;
+          font-weight: 600;
+        }
+        .dec-point-para {
+          font-size: 1.25rem;
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  @import "./description-mobile";
+}

@@ -2,4 +2,7 @@
 @import "./globals";
 
 //pages
-@import "./pages/home";
+@import "./pages/home/home";
+
+@import "./components/header/header";
+@import "./components/footer/footer";
