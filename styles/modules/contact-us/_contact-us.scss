@@ -92,10 +92,10 @@
           outline: none;
           border-bottom: 1px solid rgb(56, 56, 56);
           caret-color: var(--font-blue);
+          color: white;
           &:focus {
             border-bottom: 1px solid var(--font-blue);
             outline: none;
-            color: white;
           }
           &.message {
             height: 25vh;
