@@ -76,6 +76,11 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+        position: relative;
+        label {
+          position: absolute;
+          display: none;
+        }
         .cu-form-el {
           border: none;
           background-color: inherit;

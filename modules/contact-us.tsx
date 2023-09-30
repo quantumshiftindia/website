@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { IconType } from "react-icons";
 import { contactSocials } from "@/data";
+import MyCustomGForm from "@/components/google-form";
 
 export default function ContactUs({
   imgContainerRef,
@@ -65,31 +66,7 @@ export default function ContactUs({
       <div className="contact-us-container">
         <div className="contact-us-form" ref={formRef}>
           <span className="cu-form-header">WRITE TO US</span>
-          <form className="cu-form">
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="cu-form-el name"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="cu-form-el email"
-            />
-            <input
-              type="text"
-              placeholder="Subject"
-              className="cu-form-el subject"
-            />
-            <textarea
-              rows={10}
-              placeholder="Your Message"
-              className="cu-form-el message"
-            />
-            <button type="submit" className="cu-submit">
-              SUBMIT
-            </button>
-          </form>
+          <MyCustomGForm />
         </div>
         <div className="contact-us-info">
           <span className="cu-contact-info-header">CONTACT INFO</span>

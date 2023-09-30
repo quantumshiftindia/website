@@ -1,11 +1,12 @@
+import Link from "next/link";
 import { companyName } from "@/data";
 
 export default function Header() {
   return (
     <header className="header-main">
-      <span className="logo">
+      <Link href="/" className="logo">
         <strong>{companyName}</strong>.
-      </span>
+      </Link>
       <div className="burger">
         <span className="burger-title">MENU</span>
         <div className="burger-menu">
