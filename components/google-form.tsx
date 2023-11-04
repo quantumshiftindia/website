@@ -2,7 +2,8 @@ import { useRef } from "react";
 import { useEasyGoogleForm } from "@hymns-of-web/use-easy-google-form";
 
 export default function MyCustomGForm() {
-  const ref = useRef(null);
+  const ref = useRef<HTMLFormElement>(null);
+
   const onSubmit = useEasyGoogleForm({
     formRef: ref,
     gFormId: "1_TWwiIp02lni5ExbwUpiMsA9ubWDoxhemPFaQs1XLXk",
@@ -29,10 +30,17 @@ export default function MyCustomGForm() {
       },
     ],
   });
-  return (
-    <form onSubmit={onSubmit} ref={ref} className="cu-form">
-      <label htmlFor="Ty_Mz">Name</label>
 
+  const onSubmitHandler = (e : any) => {
+    e.preventDefault();
+    onSubmit();
+    alert("Your message has been submitted");
+    ref.current?.reset();
+  }
+
+  return (
+    <form onSubmit={onSubmitHandler} ref={ref} className="cu-form">
+      <label htmlFor="Ty_Mz">Name</label>
       <input
         type="text"
         id="Ty_Mz"
