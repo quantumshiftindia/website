@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { FormEventHandler, useRef } from "react";
 import { useEasyGoogleForm } from "@hymns-of-web/use-easy-google-form";
 
 export default function MyCustomGForm() {
@@ -31,7 +31,7 @@ export default function MyCustomGForm() {
     ],
   });
 
-  const onSubmitHandler = (e : any) => {
+  const onSubmitHandler : FormEventHandler =  (e : any) => {
     e.preventDefault();
     onSubmit();
     alert("Your message has been submitted");
