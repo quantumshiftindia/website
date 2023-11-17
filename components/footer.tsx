@@ -1,13 +1,19 @@
 import { MdOutlineEmail } from "react-icons/md";
 import { compVisionFooter, companyName } from "@/data";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <section className="footer-main">
-      <h3 className="footer-message">
-        <span className="ft-message-header">{companyName}.</span>
+      <div className="footer-message">
+        <div className="ft-head">
+          <div className="img-container">
+            <Image src="/assets/images/qs_logo_lgbt.jpg" alt="company logo" sizes="100%" fill></Image>
+          </div>
+          <h3 className="ft-message-header">{companyName}.</h3>
+        </div>
         <p className="ft-message-para">{compVisionFooter}</p>
-      </h3>
+      </div>
       <div className="footer-notify">
         <span className="ft-notify-header">Get Notified</span>
         <p className="ft-notify-para">

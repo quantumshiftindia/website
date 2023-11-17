@@ -16,10 +16,12 @@
   }
   .footer-message {
     width: 80%;
-    .ft-message-header {
-      font-size: 2rem;
+    .ft-head{
+      .ft-message-header {
+        font-size: 2rem;
+      }
     }
-  }
+    }
   .footer-notify {
     padding-top: 5vh;
     width: 80%;
@@ -28,8 +30,10 @@
 @media only screen and (max-width: 500px) {
   .footer-message {
     width: 90%;
-    .ft-message-header {
-      font-size: 1.75rem;
+    .ft-head{
+      .ft-message-header {
+        font-size: 1.75rem;
+      }
     }
   }
   .footer-notify {

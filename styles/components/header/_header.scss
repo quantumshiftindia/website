@@ -24,6 +24,11 @@
     padding: 10px 15px;
     border-radius: 7px;
     background-color: black;
+    .img-container{
+      height: 50px;
+      aspect-ratio: 1;
+      margin-right: 10px;
+    }
   }
   .burger {
     display: none;

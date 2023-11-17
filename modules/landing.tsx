@@ -4,11 +4,16 @@ import Link from "next/link";
 import { IconType } from "react-icons";
 import { compVisionLanding, companyName, socials } from "@/data";
 
-export default function Landing({
-  imgContainerRef,
-}: {
-  imgContainerRef: RefObject<HTMLDivElement>;
-}) {
+interface IntroductionProps {
+  aboutCallback?: ()=>void,
+  contactCallback?: ()=>void,
+  imgContainerRef: RefObject<HTMLDivElement>
+}
+
+export default function Landing(props : IntroductionProps) {
+
+  const {aboutCallback, imgContainerRef, contactCallback} = props;
+
   const mapper = (Value: IconType, key: number) => {
     return (
       <Link href="/" key={key}>
@@ -16,6 +21,7 @@ export default function Landing({
       </Link>
     );
   };
+  
 
   const backgroundImage =
     "https://live.staticflickr.com/4710/40645906341_d6c6f6d003_k.jpg";
@@ -38,12 +44,12 @@ export default function Landing({
           <div className="main-socials">{socials.map(mapper)}</div>
         </div>
         <div className="main-btn-container">
-          <Link href="/" className="main-link _1">
+          <button onClick={aboutCallback} className="main-link _1">
             More about us
-          </Link>
-          <Link href="/" className="main-link _2">
+          </button>
+          <button onClick={contactCallback} className="main-link _2">
             Get in touch
-          </Link>
+          </button>
         </div>
       </div>
     </main>

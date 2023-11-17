@@ -9,6 +9,20 @@ import Description from "@/modules/description";
 export default function Landingpage() {
   const heroImgRef = useRef<HTMLDivElement>(null);
   const contactImgRef = useRef<HTMLDivElement>(null);
+  const contactUs = useRef<HTMLDivElement>(null);
+  const aboutUs = useRef<HTMLDivElement>(null);
+
+  const aboutButtonCallback = ()=>{
+    aboutUs.current?.scrollIntoView({
+      behavior:"smooth"
+    })
+  }
+
+  const contactButtonCallback = ()=>{
+    contactUs.current?.scrollIntoView({
+      behavior:"smooth"
+    })
+  }
 
   const scrollCallback = useCallback(() => {
     const scrollPos = window.scrollY;
@@ -30,12 +44,12 @@ export default function Landingpage() {
   }, [scrollCallback]);
   return (
     <>
-      <Landing imgContainerRef={heroImgRef} />
-      <Introduction />
-      <Description />
+      <Landing imgContainerRef={heroImgRef} aboutCallback={aboutButtonCallback} contactCallback={contactButtonCallback}/>
+      <Introduction ref={aboutUs}/>
+      <Description  />
       <Portfolio />
       <Partners />
-      <ContactUs imgContainerRef={contactImgRef} />
+      <ContactUs imgContainerRef={contactImgRef} ref={contactUs}/>
     </>
   );
 }

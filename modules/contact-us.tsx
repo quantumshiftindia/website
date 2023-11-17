@@ -1,15 +1,15 @@
-import { useRef, type RefObject, useCallback, useEffect } from "react";
+import { useRef, type RefObject, useCallback, useEffect, forwardRef, Ref } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { IconType } from "react-icons";
 import { contactSocials } from "@/data";
 import MyCustomGForm from "@/components/google-form";
 
-export default function ContactUs({
+function CU({
   imgContainerRef,
 }: {
   imgContainerRef: RefObject<HTMLDivElement>;
-}) {
+}, ref:Ref<HTMLDivElement>) {
   const formRef = useRef<HTMLDivElement>(null);
 
   const observerOptions = useRef<IntersectionObserverInit>({
@@ -48,7 +48,7 @@ export default function ContactUs({
     );
   };
   return (
-    <section className="contact-us-main">
+    <section className="contact-us-main" ref={ref}>
       <div className="img-container back-5" ref={imgContainerRef}>
         <Image
           src="https://live.staticflickr.com/65535/51331567650_d5bd7df39f_b.jpg"
@@ -102,3 +102,6 @@ export default function ContactUs({
     </section>
   );
 }
+
+const ContactUs = forwardRef(CU);
+export default ContactUs;

@@ -15,47 +15,37 @@ export const servicesStats = [
     Icon: GrCloudComputer,
     title: "Quantum Computing Solutions",
     content:
-      "Our team develop cutting-edge applications using quantum computing to\
-       solve complex problems in fields such as finance, healthcare, and\
-        energy.",
+      "Our team harnesses the power of quantum computing to create innovative solutions for intricate challenges in domains such as finance, healthcare, and energy.",
   },
   {
     Icon: GiSatelliteCommunication,
     title: "Quantum Communication",
     content:
-      "We offer quantum-powered communication service, fibre based and\
-       free-space communication solutions that provide unparalleled \
-       protection against cyber threats.",
+      "We provide quantum-enabled communication services, including a wide range of fibre optic and free-space communication solutions that offer unprecedented levels of military-grade security against all sorts of eavasdropping attempts and cyber attacks.",
   },
   {
     Icon: GrVirtualMachine,
-    title: "Quantum ML",
+    title: "Quantum Enhanced AI & ML",
     content:
-      "We also provide Quantum based Machine Learning and Algorithmic \
-      services, creating highly efficient and secure models.",
+      "We also offer Quantum-enhanced Machine Learning and Algorithmic solutions, devising highly efficacious and secure paradigms of training Artificial Intelligence on extensive language models.",
   },
   {
     Icon: IoEarthOutline,
     title: "Quantum Ecosystem",
     content:
-      "We offer a complete quantum ecosystem for seamless client experience,\
-       including software, hardware, and consulting services, all in one place.",
+      "We provide a comprehensive quantum ecosystem for an impeccable client experience, encompassing software, hardware, and consulting services, all under one roof.",
   },
   {
     Icon: TbPhotoSensor3,
     title: "Quantum Sensing",
     content:
-      "Quantum Sensing harnesses quantum mechanics to enhance satellite \
-      communication accuracy, reliability, and security, revolutionizing how \
-      we interact with our environment.",
+      "We offer an extensive range of quantum sensing solutions tailored to the specific needs of each client to enhance the accuracy and reliability of sensing technology.",
   },
   {
     Icon: GrServices,
     title: "Customizable Services",
     content:
-      "Quantum Shift offers tailored services to meet unique application \
-      needs. Our expertise spans software development, quantum hardware, and \
-      more, guaranteeing unmatched solutions for our clients.",
+      "Quantumshift provides customized services for various applications. We have skills in software, quantum hardware, and more, ensuring optimal solutions for our clients.",
   },
 ];
 
@@ -102,7 +92,7 @@ export const partnerLogos = [
   { src: "/assets/images/partners/p7.jpg", alt: "pic7" },
   { src: "/assets/images/partners/p8.jpg", alt: "pic8" },
   { src: "/assets/images/partners/p9.jpg", alt: "pic9" },
-  { src: "/assets/images/partners/p10.webp", alt: "pic10" },
+  { src: "/assets/images/partners/p10.jpeg", alt: "pic10" },
 ];
 
 export const feedbackCarouselData = [

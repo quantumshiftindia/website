@@ -1,7 +1,8 @@
 import { IconType } from "react-icons";
 import { servicesStats } from "@/data";
+import { forwardRef } from "react";
 
-export default function Description() {
+function D() {
   const mapper = (
     val: { Icon: IconType; title: string; content: string },
     ind: number
@@ -22,12 +23,13 @@ export default function Description() {
       <h3 className="des-heading">WHAT WE DO</h3>
       <span className="des-declaration">
         {
-          "We are a Tech startup focusing on Quantum solutions and\
-   related services. Our mission is to pave the path to a \
-  sustainable future using quantum technology."
+          "We are an innovative enterprise that specializes in quantum solutions and related services. Our vision is to foster a sustainable future by leveraging the potential of quantum technology."
         }
       </span>
       <div className="dec-points">{servicesStats.map(mapper)}</div>
     </section>
   );
 }
+
+const Description = forwardRef(D);
+export default Description

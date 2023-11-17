@@ -12,12 +12,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .ft-message-header {
+    .ft-head{
       width: 85%;
-      text-align: start;
-      font-size: 3rem;
-      color: var(--font-blue);
-      padding-bottom: 3vh;
+      display: flex;
+      margin-bottom: 40px;
+      .img-container{
+        height: 55px;
+        aspect-ratio: 1;
+        margin-right: 10px;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+      .ft-message-header {
+        display: flex;
+        text-align: start;
+        font-size: 3rem;
+        color: var(--font-blue);
+        padding-bottom: 3vh;
+        padding: 0;
+        align-self: center;
+      }
     }
     .ft-message-para {
       font-size: 1.25rem;

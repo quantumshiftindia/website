@@ -1,9 +1,12 @@
-import { useCallback, useEffect, useRef } from "react";
+import { Ref, RefObject, forwardRef, useCallback, useEffect, useRef } from "react";
 import { AiOutlineDown } from "react-icons/ai";
 import { stats } from "@/data";
 
-export default function Introduction() {
-  const sectionRef = useRef<HTMLDivElement>(null);
+
+
+function I(_:unknown, sectionRef:Ref<HTMLDivElement>) {
+
+
   const containerRef = useRef<HTMLDivElement>(null);
 
   const observerOptions = useRef<IntersectionObserverInit>({
@@ -59,7 +62,7 @@ export default function Introduction() {
   };
 
   const clickHandler = () => {
-    const target = sectionRef.current;
+    const target = (sectionRef as RefObject<HTMLDivElement>)?.current;
     const scrollElem = target?.scrollIntoView({ behavior: "smooth" });
     return scrollElem;
   };
@@ -73,16 +76,7 @@ export default function Introduction() {
       <h2 className="intro-heading">HELLO THERE</h2>
       <span className="intro-declaration">We Are QuantumShift</span>
       <p className="intro-para">
-        Quantum Shift is a tech startup that focuses on revolutionizing quantum
-        computing. Our team of experts is dedicated to providing the most
-        innovative and efficient solutions for businesses that want to take
-        advantage of the power of quantum computing. We believe that
-        tomorrow&apos;s technology starts with Quantum Shift today. At Quantum
-        Shift, we promise to provide our clients with the best possible service
-        and support. We are committed to excellence and we strive to exceed your
-        expectations. We work closely with our clients to ensure that their
-        needs are met and their goals are achieved. With Quantum Shift, you can
-        be confident that you are in good hands.
+      Quantumshift is a deep-tech startup that specializes in transforming quantum solutions. Our team of experts is devoted to delivering the most cutting-edge and effective solutions for industries and government organizations that want to leverage the potential of quantum mechanics. We envision that tomorrow's technology begins with attempts of today. At Quantumshift, we guarantee to provide our clients with the highest quality of service and support. We are dedicated to excellence and we endeavor to surpass your expectations. We collaborate closely with our clients to ensure that their requirements are fulfilled and their objectives are accomplished. With Quantumshift, you can be assured that you are in capable hands.
       </p>
       <div className="stats-container" ref={containerRef}>
         {stats.map(mapper)}
@@ -90,3 +84,6 @@ export default function Introduction() {
     </section>
   );
 }
+
+const Introduction = forwardRef(I);
+export default Introduction;
