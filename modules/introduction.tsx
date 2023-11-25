@@ -76,7 +76,10 @@ function I(_:unknown, sectionRef:Ref<HTMLDivElement>) {
       <h2 className="intro-heading">HELLO THERE</h2>
       <span className="intro-declaration">We Are QuantumShift</span>
       <p className="intro-para">
-      Quantumshift is a deep-tech startup that specializes in transforming quantum solutions. Our team of experts is devoted to delivering the most cutting-edge and effective solutions for industries and government organizations that want to leverage the potential of quantum mechanics. We envision that tomorrow's technology begins with attempts of today. At Quantumshift, we guarantee to provide our clients with the highest quality of service and support. We are dedicated to excellence and we endeavor to surpass your expectations. We collaborate closely with our clients to ensure that their requirements are fulfilled and their objectives are accomplished. With Quantumshift, you can be assured that you are in capable hands.
+      Quantumshift is a deep-tech startup that specializes in transforming quantum solutions. Our team of experts is devoted to delivering the most cutting-edge and effective solutions for industries and government organizations that want to leverage the potential of quantum mechanics. We envision that tomorrow's technology begins with attempts of today. 
+      <br/>
+      <br/>
+      At Quantumshift, we guarantee to provide our clients with the highest quality of service and support. We are dedicated to excellence and we endeavor to surpass your expectations. We collaborate closely with our clients to ensure that their requirements are fulfilled and their objectives are accomplished. With Quantumshift, you can be assured that you are in capable hands.
       </p>
       <div className="stats-container" ref={containerRef}>
         {stats.map(mapper)}
