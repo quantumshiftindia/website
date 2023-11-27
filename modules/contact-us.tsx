@@ -51,7 +51,7 @@ function CU({
     <section className="contact-us-main" ref={ref}>
       <div className="img-container back-5" ref={imgContainerRef}>
         <Image
-          src="https://live.staticflickr.com/65535/51331567650_d5bd7df39f_b.jpg"
+          src="https://upload.wikimedia.org/wikipedia/commons/6/60/IBM_Q_system_%28Fraunhofer_2%29.jpg"
           alt="IBM Quantum System One in Japan for the University of Tokyo and QIIC | by IBM Research"
           fill
           sizes="100%"
