@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://quantumshiftindia.in" />
 
-        <link rel="canonical" href="https://www.yourwebsite.com/your-page-url"/>
+        <link rel="canonical" href="https://www.quantumshift.in/"/>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrgWebPage) }}
