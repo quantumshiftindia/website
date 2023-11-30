@@ -2,8 +2,8 @@ import {
   BiLogoFacebook,
   BiLogoTwitter,
   BiLogoInstagram,
-  BiLogoBehance,
-  BiLogoDribbble,
+  BiLogoLinkedin,
+  BiLogoGmail,
 } from "react-icons/bi";
 import { GiSatelliteCommunication } from "react-icons/gi";
 import { GrVirtualMachine, GrServices, GrCloudComputer } from "react-icons/gr";
@@ -63,16 +63,24 @@ export const contactSocials = [
   BiLogoFacebook,
   BiLogoTwitter,
   BiLogoInstagram,
-  BiLogoBehance,
-  BiLogoDribbble,
+  BiLogoGmail,
+  BiLogoLinkedin,
 ];
 
 export const socials = [
   BiLogoFacebook,
   BiLogoTwitter,
   BiLogoInstagram,
-  BiLogoBehance,
-  BiLogoDribbble,
+  BiLogoGmail,
+  BiLogoLinkedin,
+];
+
+export const socialLinks = [
+  "https://www.facebook.com/profile.php?id=61553971746970",
+  "https://twitter.com/Quantumshift_IN",
+  "/",
+  "mailto:contact@quantumshift.in",
+  "https://www.linkedin.com/company/quantumshift/",
 ];
 
 export const stats = [

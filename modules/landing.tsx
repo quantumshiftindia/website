@@ -2,7 +2,7 @@ import { type RefObject } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { IconType } from "react-icons";
-import { compVisionLanding, companyName, socials } from "@/data";
+import { compVisionLanding, companyName, socials , socialLinks } from "@/data";
 
 interface IntroductionProps {
   aboutCallback?: ()=>void,
@@ -14,9 +14,12 @@ export default function Landing(props : IntroductionProps) {
 
   const {aboutCallback, imgContainerRef, contactCallback} = props;
 
+
+
   const mapper = (Value: IconType, key: number) => {
+    const link = socialLinks[key];
     return (
-      <Link href="/" key={key}>
+      <Link href={link} key={key} target="_blank">
         <Value />
       </Link>
     );
