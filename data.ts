@@ -13,9 +13,9 @@ import { TbPhotoSensor3 } from "react-icons/tb";
 export const servicesStats = [
   {
     Icon: GrCloudComputer,
-    title: "Quantum Computing Solutions",
+    title: "Semiconductor Designing",
     content:
-      "Our team harnesses the power of quantum computing to create innovative solutions for intricate challenges in domains such as finance, healthcare, and energy.",
+      "We research on the development of secure-by-design semiconductors with a variety of RISC and CISC processors running on our own proprietary Instruction Set Architecture and Microarchitecture, optimized for being used in defence and high performance cloud computing, wherever cybersecurity matters the most.",
   },
   {
     Icon: GiSatelliteCommunication,
@@ -27,13 +27,13 @@ export const servicesStats = [
     Icon: GrVirtualMachine,
     title: "Quantum Enhanced AI & ML",
     content:
-      "We also offer Quantum-enhanced Machine Learning and Algorithmic solutions, devising highly efficacious and secure paradigms of training Artificial Intelligence on extensive language models.",
+      "We also offer Quantum-enhanced Machine Learning and Algorithmic solutions, devising highly efficacious and secure paradigms of training Artificial Intelligence on large language models.",
   },
   {
     Icon: IoEarthOutline,
     title: "Quantum Ecosystem",
     content:
-      "We provide a comprehensive quantum ecosystem for an impeccable client experience, encompassing software, hardware, and consulting services, all under one roof.",
+      "We provide a comprehensive quantum ecosystem for an impeccable client experience, encompassing software, hardware, and consulting services, all under one roof, to create solutions for intricate challenges in domains such as defence, finance, healthcare, energy, research and innovation.",
   },
   {
     Icon: TbPhotoSensor3,

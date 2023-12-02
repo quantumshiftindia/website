@@ -60,7 +60,7 @@ function CU({
       <h3 className="contact-us-head">
         <span className="contact-us-heading">CONTACT US</span>
         <p className="contact-us-subheading">
-          Reach out for a new project or just say hello
+        Reach out for a new project or get aquainted with us
         </p>
       </h3>
       <div className="contact-us-container">
