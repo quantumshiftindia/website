@@ -33,14 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-
-        {/* Custom OpenGraph meta tags */}
-        <meta property="og:title" content="QuantumShift" />
-        <meta property="og:description" content="QuantumShift" />
-        <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://quantumshiftindia.in" />
-
-        <link rel="canonical" href="https://www.quantumshift.in/"/>
+       
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaOrgWebPage) }}

@@ -1,6 +1,5 @@
 import { type RefObject } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { IconType } from "react-icons";
 import { compVisionLanding, companyName, socials , socialLinks } from "@/data";
 
@@ -14,18 +13,15 @@ export default function Landing(props : IntroductionProps) {
 
   const {aboutCallback, imgContainerRef, contactCallback} = props;
 
-
-
   const mapper = (Value: IconType, key: number) => {
     const link = socialLinks[key];
     return (
-      <Link href={link} key={key} target="_blank">
+      <a href={link} key={key} target="_blank" rel="noopener noreferrer">
         <Value />
-      </Link>
+      </a>
     );
   };
   
-
   const backgroundImage =
     "https://live.staticflickr.com/4710/40645906341_d6c6f6d003_k.jpg";
 
