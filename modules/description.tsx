@@ -21,11 +21,11 @@ function D() {
   return (
     <section className="des-main">
       <h3 className="des-heading">WHAT WE DO</h3>
-      <span className="des-declaration">
+      {/* <span className="des-declaration">
         {
           "We are an innovative cybersecurity company that specializes in quantum technologies and semiconductor designs. Our vision is to foster a sustainable & secure future by harnessing the potential of 'deep-tech' technologies to mitigate emerging threats."
         }
-      </span>
+      </span> */}
       <div className="dec-points">{servicesStats.map(mapper)}</div>
     </section>
   );
