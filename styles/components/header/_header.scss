@@ -8,28 +8,78 @@
   top: 0;
   left: 0;
   z-index: 10;
+  justify-self: center;
+  align-self: center;
   strong {
     color: white;
   }
+
   .logo {
     display: flex;
     font-size: 2.75rem;
     text-decoration: none;
     font-weight: 600;
     text-align: center;
-    margin: auto 0;
+    margin: 0;
     color: var(--font-blue);
     justify-content: center;
     align-items: center;
     padding: 10px 15px;
-    border-radius: 7px;
+    border-radius: 7px 0 0 7px;
     background-color: black;
-    .img-container{
+
+    .img-container {
       height: 50px;
       aspect-ratio: 1;
       margin-right: 10px;
     }
+    
+    .company-name{
+      font-size: 2.5rem;
+      .trade-mark{
+        font-size: 1.5rem;
+      }
+    }
   }
+
+  .navigation {
+    display: flex;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--font-blue);
+    justify-content: right;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 0 7px 7px 0;
+    background-color: #fff;
+    margin: 0;
+    width: 100%;
+    // backdrop-filter: blur(10px) saturate(100%) contrast(45%) brightness(130%);
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-item {
+      font-size: 1.9rem;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #333;
+      padding: 5px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #ddd;
+        // text-decoration: underline var(--font-blue) 5px;
+      }
+    }
+  }
+
   .burger {
     display: none;
     // display: flex;
@@ -42,11 +92,13 @@
     padding: 0 8px;
     border-radius: 5%;
     background-color: black;
+
     .burger-title {
       font-size: medium;
       text-align: center;
       font-weight: 500;
     }
+
     .burger-menu {
       height: 22px;
       width: auto;
@@ -54,6 +106,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+
       .line {
         border-radius: 25px;
         height: 3px;
@@ -62,5 +115,6 @@
       }
     }
   }
+
   @import "./header-mobile";
 }

@@ -50,21 +50,28 @@
   }
   .intro-declaration {
     width: 550px;
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 600;
     color: white;
     text-align: center;
     border-bottom: 1px solid white;
     margin-bottom: 50px;
     padding-bottom: 30px;
+    .intro-declaration-sup {
+      font-size: 1.5rem;
+    }
   }
   .intro-para {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     letter-spacing: 0.05em;
     padding-bottom: 6vh;
     text-align: justify;
     color: white;
+
+    .intro-para-sup{
+      font-size: 1rem;
+    }
   }
   .stats-container {
     display: grid;

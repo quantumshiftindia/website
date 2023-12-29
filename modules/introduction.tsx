@@ -74,9 +74,9 @@ function I(_:unknown, sectionRef:Ref<HTMLDivElement>) {
         <span>Scroll Down</span>
       </button>
       <h2 className="intro-heading">HELLO THERE</h2>
-      <span className="intro-declaration">We Are QuantumShift</span>
+      <span className="intro-declaration">We Are QuantumShift<sup className="intro-declaration-sup">TM</sup></span>
       <p className="intro-para">
-        Quantumshift is an Indian cybersecurity company. We are a team comprising of experts from various scientific domains, united and devoted to deliver the most cutting-edge and effective solutions for industries and the Indian government organizations. We envision that tomorrow's technology begins with attempts of today.
+      Quantumshift<sup className="intro-para-sup">TM</sup> is an Indian cybersecurity company focused in Quantum Technologies, Al and Semiconductors. We are a team comprising of experts from various scientific domains, united and devoted to deliver the most cutting-edge and effective solutions for the defence industries and the government organizations. We envision that tomorrow's digital sovereignity begins with attempts of today.
       </p>
       <div className="stats-container" ref={containerRef}>
         {stats.map(mapper)}
