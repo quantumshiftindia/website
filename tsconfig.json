@@ -31,6 +31,6 @@
     "isolatedModules": true,
     "verbatimModuleSyntax": false
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "modules/word-cloud.jsx"],
   "exclude": ["node_modules"]
 }

@@ -5,6 +5,7 @@ import Portfolio from "./portfolio";
 import Partners from "./partners";
 import ContactUs from "./contact-us";
 import Description from "@/modules/description";
+import Word_Cloud from "./word-cloud";
 
 export default function Landingpage() {
   const heroImgRef = useRef<HTMLDivElement>(null);
@@ -47,6 +48,7 @@ export default function Landingpage() {
       <Landing imgContainerRef={heroImgRef} aboutCallback={aboutButtonCallback} contactCallback={contactButtonCallback}/>
       <Introduction ref={aboutUs}/>
       <Description  />
+      <Word_Cloud />
       <Portfolio />
       <Partners />
       <ContactUs imgContainerRef={contactImgRef} ref={contactUs}/>
