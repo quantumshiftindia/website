@@ -32,7 +32,6 @@ function Word({ children, ...props }) {
             ref={ref}
             onPointerOver={over}
             onPointerOut={out}
-            onClick={() => console.log("clicked")}
             {...props}
             {...fontProps}
             children={children}
@@ -41,6 +40,12 @@ function Word({ children, ...props }) {
 }
 
 function Cloud({ count, radius }) {
+
+    const mapper = ([pos, word], index) => {
+        return (
+            <Word key={index} position={pos} children={word} />
+        );
+    };
 
     const words = useMemo(() => {
         const temp = [];
@@ -87,9 +92,7 @@ function Cloud({ count, radius }) {
             }
         return temp;
     }, [count, radius]);
-    return words.map(([pos, word], index) => (
-        <Word key={index} position={pos} children={word} />
-    ));
+    return words.map(mapper);
 }
 
 const Word_Cloud = () => {
@@ -99,7 +102,7 @@ const Word_Cloud = () => {
                 <Canvas>
                     <fog attach="fog" args={["#202025", 0, 80]} />
                     <Cloud count={5} radius={30} />
-                    <TrackballControls minDistance={40} maxDistance={60}/>
+                    <TrackballControls minDistance={40} maxDistance={60} />
                 </Canvas>
             </div>
         </>

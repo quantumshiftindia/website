@@ -3,11 +3,15 @@ import { companyName } from "@/data";
 import Image from "next/image";
 import { navLinks } from "@/data";
 
-const mapper = (name: string, path: string,key: number) => {
+const mapper = (
+  link:{
+    name: string, path: string
+  }
+  ,key: number) => {
   return (
     <li className="nav-item">
-      <Link href={path} key={key} className="nav-link">
-        {name}
+      <Link href={link.path} key={key} className="nav-link">
+        {link.name}
       </Link>
     </li>
   );
@@ -24,7 +28,7 @@ export default function Header() {
       </Link>
       <nav className="navigation">
         <ul className="nav-list">
-          {navLinks.map((link, key) => mapper(link.name, link.path, key))}
+          {navLinks.map(mapper)}
         </ul>
       </nav>
       <div className="burger">
