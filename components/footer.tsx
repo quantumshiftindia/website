@@ -8,9 +8,9 @@ export default function Footer() {
       <div className="footer-message">
         <div className="ft-head">
           <div className="img-container">
-            <Image src="/assets/images/qs_logo_lgbt.jpg" alt="company logo" sizes="100%" fill></Image>
+            <Image src="/assets/images/qs_logo_lgbt_zoom.jpg" alt="company logo" sizes="100%" fill></Image>
           </div>
-          <h3 className="ft-message-header">{companyName}.</h3>
+          <h3 className="ft-message-header">{companyName}.<sup className="ft-trade-mark">TM</sup></h3>
         </div>
         <p className="ft-message-para">{compVisionFooter}</p>
       </div>

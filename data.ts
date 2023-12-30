@@ -10,6 +10,15 @@ import { GrVirtualMachine, GrServices, GrCloudComputer } from "react-icons/gr";
 import { IoEarthOutline } from "react-icons/io5";
 import { TbPhotoSensor3 } from "react-icons/tb";
 
+// Navigation Links
+export const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "Products", path: "/" },
+  { name: "Services", path: "/" },
+  { name: "About", path: "/" },
+  { name: "Contact", path: "/" },
+];
+
 export const servicesStats = [
   {
     Icon: GrCloudComputer,
@@ -51,10 +60,9 @@ export const servicesStats = [
 
 export const companyName = "QuantumShift";
 
-export const compVisionFooter =
-  "At QuantumShift, we're at\
- the forefront of the quantum revolution. Partner with us and step into the quantum era\
- for a smarter, more connected world.";
+const tm = "TM";
+
+export const compVisionFooter = "At QuantumShift, we're at the forefront of the quantum revolution. Partner with us and step into the quantum era for a smarter, more connected world."
 
 export const compVisionLanding =
   "Welcome to the Quantum Revolution... and we are QuantumShift.";
@@ -106,9 +114,9 @@ export const partnerLogos = [
 export const feedbackCarouselData = [
   {
     para: "At QuantumShift, we are pioneering quantum\
-       solutions to revolutionize computing and problem-solving.\
-       Our expertise in quantum physics, computer science, and\
-       engineering allows us to unlock the true potential of \
+      solutions to revolutionize computing and problem-solving.\
+      Our expertise in quantum physics, computer science, and\
+      engineering allows us to unlock the true potential of \
       quantum systems, enabling breakthrough advancements and \
       transforming industries. Partner with us to embark on a \
       quantum adventure and unlock unprecedented opportunities \
@@ -120,9 +128,9 @@ export const feedbackCarouselData = [
   },
   {
     para: "At QuantumShift, we are pioneering quantum\
-       solutions to revolutionize computing and problem-solving.\
-       Our expertise in quantum physics, computer science, and\
-       engineering allows us to unlock the true potential of \
+      solutions to revolutionize computing and problem-solving.\
+      Our expertise in quantum physics, computer science, and\
+      engineering allows us to unlock the true potential of \
       quantum systems, enabling breakthrough advancements and \
       transforming industries. Partner with us to embark on a \
       quantum adventure and unlock unprecedented opportunities \
@@ -134,9 +142,9 @@ export const feedbackCarouselData = [
   },
   {
     para: "At QuantumShift, we are pioneering quantum\
-       solutions to revolutionize computing and problem-solving.\
-       Our expertise in quantum physics, computer science, and\
-       engineering allows us to unlock the true potential of \
+      solutions to revolutionize computing and problem-solving.\
+      Our expertise in quantum physics, computer science, and\
+      engineering allows us to unlock the true potential of \
       quantum systems, enabling breakthrough advancements and \
       transforming industries. Partner with us to embark on a \
       quantum adventure and unlock unprecedented opportunities \
@@ -148,9 +156,9 @@ export const feedbackCarouselData = [
   },
   {
     para: "At QuantumShift, we are pioneering quantum\
-       solutions to revolutionize computing and problem-solving.\
-       Our expertise in quantum physics, computer science, and\
-       engineering allows us to unlock the true potential of \
+      solutions to revolutionize computing and problem-solving.\
+      Our expertise in quantum physics, computer science, and\
+      engineering allows us to unlock the true potential of \
       quantum systems, enabling breakthrough advancements and \
       transforming industries. Partner with us to embark on a \
       quantum adventure and unlock unprecedented opportunities \
@@ -162,9 +170,9 @@ export const feedbackCarouselData = [
   },
   {
     para: "At QuantumShift, we are pioneering quantum\
-       solutions to revolutionize computing and problem-solving.\
-       Our expertise in quantum physics, computer science, and\
-       engineering allows us to unlock the true potential of \
+      solutions to revolutionize computing and problem-solving.\
+      Our expertise in quantum physics, computer science, and\
+      engineering allows us to unlock the true potential of \
       quantum systems, enabling breakthrough advancements and \
       transforming industries. Partner with us to embark on a \
       quantum adventure and unlock unprecedented opportunities \
@@ -176,9 +184,9 @@ export const feedbackCarouselData = [
   },
   {
     para: "At QuantumShift, we are pioneering quantum\
-       solutions to revolutionize computing and problem-solving.\
-       Our expertise in quantum physics, computer science, and\
-       engineering allows us to unlock the true potential of \
+      solutions to revolutionize computing and problem-solving.\
+      Our expertise in quantum physics, computer science, and\
+      engineering allows us to unlock the true potential of \
       quantum systems, enabling breakthrough advancements and \
       transforming industries. Partner with us to embark on a \
       quantum adventure and unlock unprecedented opportunities \
